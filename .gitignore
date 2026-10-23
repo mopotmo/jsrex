@@ -1,0 +1,11 @@
+*.class
+.DS_Store
+*.dll
+*.obj
+*.pdb
+*.suo
+Debug/
+Release/
+# REX SDK files (proprietary, obtain from Reason Studios)
+native/REX.c
+native/REX.h
