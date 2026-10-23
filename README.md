@@ -8,7 +8,7 @@ A Java Sound `AudioFileReader` for ReCycle files (`.rex`, `.rx2`, `.rcy`) on Win
 
 ## What it does
 
-`REXFileReader` reads a ReCycle file through the REX SDK and delivers the rendered loop as an `AudioInputStream`. Slice information is available through `REXAudioFileFormat`/`REXSliceInfo`. For the GrooveManager framework the jar also registers `REXFormatProvider`. The audio comes out as float PCM, so the `floatconversion` plugin from the MC-909 Sample Editor repository is needed to convert it.
+`REXFileReader` reads a ReCycle file through the REX SDK and delivers the rendered loop as an `AudioInputStream`. Slice information is available through `REXAudioFileFormat`/`REXSliceInfo`. For the GrooveManager framework the jar also registers `REXFormatProvider`. The audio comes out as float PCM, so the [floatconversion](https://github.com/mopotmo/floatconversion) plugin is needed to convert it.
 
 File properties are exposed as `AudioFileFormat` properties: `duration`, `author`, `copyright`, `comment`, `slice_count`, `bpm`, `time_signature` (`int[2]`) and `slices` (`int[n][2]`: position and length in sample frames).
 
